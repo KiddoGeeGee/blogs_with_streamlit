@@ -12,7 +12,7 @@ with st.sidebar:
             st.text(answer)
         #elif st.form_submit_button('New Conversation'):
         #    st.session_state['chatbot'].new_conversation()
-    audio_file = open('Documents/最伟大的作品.wav', 'rb')
+    audio_file = open('music/最伟大的作品.wav', 'rb')
     audio_bytes = audio_file.read()
     st.write('正在播放最伟大的作品-周杰伦 :musical_note:')
     st.audio(audio_bytes, format='audio/wav')
